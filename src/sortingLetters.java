@@ -20,20 +20,25 @@ public class sortingLetters {
         // sort them into ascending sequence
         System.out.println("before sort: " + a + b + c);
         // max number of swaps for 3 letters is 3
-        if(a<b){
+        if(a>b){
             temp = a;
             a = b;
             b = temp;
         }
-        if(b<c){
-            temp = b;
-            b = c;
-            c = temp;
-        }
-        if (c<a){
+//        if(b>c){
+//            temp = b;
+//            b = c;
+//            c = temp;
+//        }
+        if (a>c){
             temp = c;
             c = a;
             a = temp;
+        }
+        if(b>c){
+            temp = b;
+            b = c;
+            c = temp;
         }
 
         // display all
