@@ -21,7 +21,7 @@ public class sortingLetters {
         c = keyboard.next();
 
         // sort them into ascending sequence
-        System.out.println("before sort: " + a + b + c);
+        System.out.println("before sort: " + a.toUpperCase() + b.toUpperCase() + c.toUpperCase());
 
         // max number of swaps for 3 letters is 3
         if(a.compareToIgnoreCase(b)>0){
@@ -42,7 +42,7 @@ public class sortingLetters {
         }
 
         // display all
-        System.out.println("after sort: " + a + b + c);
+        System.out.println("after sort: " + a.toUpperCase() + b.toUpperCase() + c.toUpperCase());
 
     }
 }
