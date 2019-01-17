@@ -2,40 +2,40 @@ import java.util.Scanner;
 
 public class sortingLetters {
     public static void main(String[] args){
-        char a;
-        char b;
-        char c;
 
-        char temp;
+        String a;
+        String b;
+        String c;
+
+        String temp;
 
         // prompt user for three letters
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Enter the first letter: ");
-        a = keyboard.next().charAt(0);
+        a = keyboard.next();
+
         System.out.println("Enter the second letter: ");
-        b = keyboard.next().charAt(0);
+        b = keyboard.next();
+
         System.out.println("Enter the third letter: ");
-        c = keyboard.next().charAt(0);
+        c = keyboard.next();
 
         // sort them into ascending sequence
         System.out.println("before sort: " + a + b + c);
+
         // max number of swaps for 3 letters is 3
-        if(a>b){
+        if(a.compareToIgnoreCase(b)>0){
             temp = a;
             a = b;
             b = temp;
         }
-//        if(b>c){
-//            temp = b;
-//            b = c;
-//            c = temp;
-//        }
-        if (a>c){
+
+        if (a.compareToIgnoreCase(c)>0){
             temp = c;
             c = a;
             a = temp;
         }
-        if(b>c){
+        if(b.compareToIgnoreCase(c)>0){
             temp = b;
             b = c;
             c = temp;
